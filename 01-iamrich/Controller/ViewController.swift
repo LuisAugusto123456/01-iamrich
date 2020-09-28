@@ -29,11 +29,11 @@ class ViewController: UIViewController {
                                                     gusto
                                                     """, preferredStyle: UIAlertController.Style.alert);
         let action = UIAlertAction(title: "Aceptar", style: .default, handler: { (action) in
-           print("He pulsado aceptar")
+           print("He pulsado aceptar - con parametros de entrada")
         })
         controller.addAction(action)
         let action2 = UIAlertAction(title: "Cancelar", style: .cancel){ _ in
-            print("He pulsado cancelar")
+            print("He pulsado cancelar - sin parametros de entrada")
         }
         controller.addAction(action2)
         self.show(controller, sender: nil)
